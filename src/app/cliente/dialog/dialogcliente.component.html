@@ -1,4 +1,4 @@
-<h1 mat-dialog-title> Nuevo usuario</h1>
+<h1 mat-dialog-title> {{cliente !=null ? 'Editar usuario' : 'Nuevo usuario'}}</h1>
 
 <div mat-dialog-contentx>
     <mat-form-field>
@@ -12,7 +12,7 @@
 
 <div mat-dialog-actions>
 
-  <button mat-raised-button (click)= "addCliente()">Guardar</button>
+  <button mat-raised-button (click)= "cliente != null? editCliente(): addCliente()">Guardar</button>
   <button mat-raised-button (click)= "close()">Cancelar</button>
 
 </div>

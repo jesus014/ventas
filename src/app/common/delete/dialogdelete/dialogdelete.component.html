@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Eliminar</h1>
+
+<div mat-dialog-content>
+  <h3>¿Estas seguro de eliminar?</h3>
+</div>
+
+<div mat-dialog-actions>
+<!--con mat-dialog close mando la sentencia del valor true o false de acuerdo a lo que haya seleccionado
+para que sea escogido en el component.ts-->>
+  <button mat-raised-button cdKFocusInitial [mat-dialog-close]="false"> Cancelar</button>
+  <button color="warning" mat-raised-button  [mat-dialog-close]="true"> Eliminar</button>
+</div>
